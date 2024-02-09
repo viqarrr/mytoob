@@ -13,7 +13,7 @@ const Navbar = () => {
     sx={{ position: 'sticky', backgroundColor: '#0f0f0f', top: 0 }}
     >
       <Link to="/" style={{ display: 'flex', alignItems: 'center', }}>
-        <img src={logo} alt="logo" height={35} />
+        <img src={logo} alt="logo" height={35} style={{ marginLeft: '20px' }} />
       </Link>
       <SearchBar />
     </Stack>
