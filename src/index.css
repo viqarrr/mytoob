@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #0f0f0f;
 }
 
 a {
@@ -57,7 +58,7 @@ a {
   border: none;
 
   padding: 9px 15px;
-  margin: 5px 0px;
+  margin: 5px 20px 5px 0;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
