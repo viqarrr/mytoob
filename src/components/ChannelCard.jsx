@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Box, CardContent, CardMedia, Typography } from "@mui/material";
 import { demoProfilePicture } from "../utils/constants";
 
-const ChannelCard = ({ channelDetail, marginTop }) => {
+const ChannelCard = ({ channelDetail, width, height, marginTop }) => {
   return (
     <Box
       sx={{
@@ -13,8 +13,8 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: { xs: '350px', md: '320px' },
-        height: '326px',
+        width: width || { xs: '350px', md: '320px' },
+        height: height || '326px',
         margin: 'auto',
         marginTop
       }}
