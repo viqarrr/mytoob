@@ -12,12 +12,12 @@ const Navbar = () => {
     direction="row" 
     alignItems="center" 
     p={2} 
-    sx={{ pl: '30px', position: 'sticky', backgroundColor: '#0f0f0f', top: 0 }}
+    sx={{ pl: '30px', position: 'sticky', backgroundColor: '#0f0f0f', top: 0, zIndex: "99" }}
     >
       <Link to="/" style={{ display: 'flex', alignItems: 'center', }}>
         <img src={logo} alt="logo" height={30} />
         <Typography variant='h6' fontWeight='bold' ml={'5px'} sx={{ color: 'white' }} >
-          MyTube
+          MyToob
         </Typography>
       </Link>
       <SearchBar />

@@ -32,7 +32,7 @@ const SearchBar = () => {
         setSearchTerm(e.target.value)
         
       }} 
-      style={{backgroundColor: '#121212'}} />
+      style={{backgroundColor: '#121212', color: "white"}} />
       <IconButton type='submit' style={{ color: '#d5e3ef', }}> 
         <Search />
       </IconButton>

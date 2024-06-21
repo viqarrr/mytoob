@@ -7,12 +7,13 @@ import { Sidebar, Videos } from "./";
 
 const Feed = () => {
 
-const [selectedCategory, setSelectedCategory] = useState('New');
+const [selectedCategory, setSelectedCategory] = useState('Home');
 const [videos, setVideos] = useState([]);
 
 useEffect(() => {
   fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-    .then((data) => setVideos(data.items))
+    .then((data) => setVideos(data.items)
+    )
 }, [selectedCategory])
 
   return (
