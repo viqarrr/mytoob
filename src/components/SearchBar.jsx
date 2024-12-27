@@ -22,8 +22,11 @@ const SearchBar = () => {
     <Paper 
       component="form" 
       onSubmit={handleSubmit} 
-      sx={{ borderRadius: 20, border: '1px solid #222222', pl: 2, padding: 2, paddingY: '2px',  margin: 'auto', boxShadow: 'none', alignItems: 'center', backgroundColor: '#121212' }} 
+      sx={{ display: 'flex', width: {sx: '100px', sm: 'auto'}, borderRadius: 20, border: '1px solid #222222', pl: {sx: 1, md: 2}, paddingY: '2px',  margin: 'auto', boxShadow: 'none', alignItems: 'center', backgroundColor: '#121212' }} 
     >
+      <IconButton type='submit' style={{ color: '#d5e3ef' }}> 
+        <Search />
+      </IconButton>
       <input 
       className='search-bar' 
       placeholder='Search...' 
@@ -33,9 +36,6 @@ const SearchBar = () => {
         
       }} 
       style={{backgroundColor: '#121212', color: "white"}} />
-      <IconButton type='submit' style={{ color: '#d5e3ef', }}> 
-        <Search />
-      </IconButton>
     </Paper>
   )
 }

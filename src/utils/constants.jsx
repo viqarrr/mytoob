@@ -10,8 +10,9 @@ import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import logosvg from "./logo.svg";
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo = logosvg ;
 
 export const categories = [
   { name: 'Home', icon: <HomeIcon />, },
